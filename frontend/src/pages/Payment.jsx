@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../assets/Header";
-import "../components/Payment.css";
+import "../styles/Payment.css";
 import {handlePayment} from "../utils/PaymentService"
 
 const dummyBreads = [
@@ -52,3 +52,4 @@ const Payment = () => {
 };
 
 export default Payment;
+

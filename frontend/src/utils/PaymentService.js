@@ -25,15 +25,12 @@ export const handlePayment = async () => {
 
         console.log('결제 성공:', response);
 
-        // 3. 백엔드로 결제 검증 요청
-        const verifyResponse = await fetch('http://localhost:8080/api/payment/complete', {
-            method: 'POST',
+        // 3. 백엔드로 결제 정보 조회 요청 (포트원 API 통해서)
+        const verifyResponse = await fetch(`http://localhost:8080/api/payment/info/${response.paymentId}`, {
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-                paymentId: response.paymentId,
-            }),
         });
 
         const paymentData = await verifyResponse.json();
@@ -48,3 +45,4 @@ export const handlePayment = async () => {
         return { success: false, error: error.message };
     }
 };
+

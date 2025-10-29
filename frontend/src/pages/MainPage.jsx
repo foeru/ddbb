@@ -1,7 +1,7 @@
 import React from "react";
-import "../components/MainPage.css";
+import "../styles/MainPage.css";
 import Header from "../assets/Header";
-import MainLogo from "../assets/images/MainLogo.png";
+import MainLogo from "../assets/MainLogo.png";
 
 const MainPage = () => {
   const handlePaymentStart = () => {
@@ -12,7 +12,7 @@ const MainPage = () => {
   const handleAdminPage = () => {
     // 관리자 페이지 로직
 
-    window.location.href = "/Admin";
+    window.location.href = "/admin";
   };
 
   return (
@@ -67,3 +67,4 @@ const MainPage = () => {
 };
 
 export default MainPage;
+

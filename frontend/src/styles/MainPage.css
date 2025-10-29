@@ -143,6 +143,7 @@
   background: linear-gradient(135deg, #57452d 0%, #4b3b2a 100%);
 }
 
+/* 반응형 디자인 */
 @media (max-width: 968px) {
   .banner-content {
     grid-template-columns: 1fr;
@@ -235,3 +236,4 @@
     font-size: 0.95rem;
   }
 }
+
