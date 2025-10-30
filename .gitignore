@@ -39,3 +39,9 @@ out/
 
 venv/
 **/venv/
+*.pyc
+__pycache__/
+*.so
+*.egg-info/
+dist/
+*.log
