@@ -281,12 +281,3 @@ server: { port: 5174 }
 - ✅ 프로덕션 배포 용이
 - ✅ 확장 가능한 아키텍처
 
----
-
-## 👨‍💻 작성자
-
-AI Assistant with ❤️
-
-## 📄 라이선스
-
-MIT License
