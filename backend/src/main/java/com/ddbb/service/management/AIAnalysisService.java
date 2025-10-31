@@ -413,7 +413,7 @@ public class AIAnalysisService {
             ChatCompletionRequest completionRequest = ChatCompletionRequest.builder()
                     .model("gpt-4")
                     .messages(Arrays.asList(systemMessage, userMessage))
-                    .temperature(0.7)
+                    .temperature(0.2)  // 낮은 값으로 일관성 있는 분석 결과 생성 (0.0~1.0, 낮을수록 일관적)
                     .maxTokens(2000)
                     .build();
             
